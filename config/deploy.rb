@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'my_app_name'
-set :repo_url, 'https://github.com/calvod/associatetool.git'
+set :repo_url, 'https://github.com/calvod/AssociateTool.git'
 set :branch, :master
 set :deploy_to, '/home/deploy/associatetool'
 set :pty, true
