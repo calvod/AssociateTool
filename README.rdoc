@@ -10,4 +10,4 @@ To run the app locally on your machine, do the following:
         bin/rake db:migrate
         bin/rails server
         
-3. Go to your web browser and type in ```localhost:3000``` to the URL. You should now be free to use the app.
+3. Go to your web browser and type in "localhost:3000" to the URL. You should now be free to use the app.
