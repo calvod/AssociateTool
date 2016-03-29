@@ -1,0 +1,45 @@
+<h1>New Associate</h1>
+
+<%= form_for :associate, url: associates_path do |f| %>
+  <% if @associate.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@associate.errors.count, "error") %> prohibited
+        this associate from being saved:
+      </h2>
+      <ul>
+        <% @associate.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :First_Name %><br>
+    <%= f.text_field :firstname %>
+  </p>
+ 
+  <p>
+    <%= f.label :Last_Name %><br>
+    <%= f.text_field :lastname %>
+  </p>
+
+   <p>
+    <%= f.label :Username %><br>
+    <%= f.text_field :username %>
+  </p>
+
+   <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Add associate to database" %>
+  </p>
+<% end %>
+
+<br><br>
+
+<%= link_to 'View All Associates', controller: 'associates' %>

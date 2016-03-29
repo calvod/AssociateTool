@@ -1,0 +1,24 @@
+<p>
+  <strong>First Name:</strong>
+  <%= @associate.firstname %>
+</p>
+ 
+<p>
+  <strong>Last name:</strong>
+  <%= @associate.lastname %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @associate.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @associate.email %>
+</p>
+
+<br><br>
+
+<%= link_to 'Edit', edit_associate_path(@associate) %> |
+<%= link_to 'Back to List of All Associates', associates_path %>
