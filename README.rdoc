@@ -2,7 +2,8 @@
 
 This repo contains a simple Ruby on Rails web app that a manager or HR leader could use to create, read, update, or destroy records in a database of associates.
 
-To run the app locally on your machine, you must first have Rails installed. This can done here: installrails.com
+To run the app locally on your machine, you must first have Rails installed. This can done here: http://installrails.com/
+
 Once you have Rails installed, do the following:
 
 
