@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo contains a simple Ruby on Rails web app that a manager or HR leader could use to create, read, update, or destroy records in a database of associates.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To run the app locally on your machine, do the following:
+    1. Clone into this reposity, open up your command line, and navigate to this repository.
+    2. In your command line, copy and paste the following code:
+    ```
+        bin/rails generate model Associate firstname:string lastname:string username:string email:string
+        bin/rake db:migrate
+        bin/rails server
+    ```
+    3. Go to your web browser and type in ```localhost:3000``` to the URL. You should now be free to use the app.
